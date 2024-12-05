@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Oswald:wght@200..700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Zen+Dots&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto Mono", monospace;
+}
+
+.wrapper {
+  height: 100vh;
+  width: 100%;
+  background: rgb(33, 31, 80);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#num_label {
+  font-size: 5rem;
+}
+.container {
+  height: 450px;
+  width: 500px;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.705);
+  max-width: 80%;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 15px 100px;
+  flex-direction: column;
+}
+.header {
+  text-align: center;
+}
+#btn {
+  padding: 7px;
+  width: 150px;
+  border: none;
+  border-radius: 10px;
+  transition: 0.5s ease;
+  &:hover {
+    color: white;
+    background-color: blue;
+  }
+}
+#text {
+  padding: 5px;
+  width: 150px;
+  border: none;
+  border-radius: 2px;
+  &:focus {
+    outline: 6px black;
+  }
+}
+@media (max-width: 680px) {
+  #result {
+    font-size: 0.9rem;
+  }
+}
